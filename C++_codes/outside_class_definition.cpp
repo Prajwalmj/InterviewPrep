@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+class Test{
+    public:
+        int data;
+        void displayData(int x);
+};
+
+//outside class definition
+void Test::displayData(int x){
+    data = x;
+    cout << "Data is : " << data << endl;
+}
+
+int main(){
+    Test t;
+    t.displayData(100);
+    return 0;
+}
