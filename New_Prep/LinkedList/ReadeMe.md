@@ -14,3 +14,11 @@ Deletion
 - double pointer to a funciton
 - beginning => one pointer enough.
 - middle/end => use two pointers
+
+Doubly Linked List
+
+Insertion
+- need single temp pointer as nodes can be accessed in both direcitons.
+
+Deletion
+- need single temp pointer as nodes can be accessed in both direcitons.
