@@ -21,4 +21,4 @@ Insertion
 - need single temp pointer as nodes can be accessed in both direcitons.
 
 Deletion
-- need single temp pointer as nodes can be accessed in both direcitons.
+- need two temp pointers, for middle or last element deletion.
