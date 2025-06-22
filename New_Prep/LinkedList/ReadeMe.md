@@ -25,3 +25,12 @@ Insertion
 
 Deletion
 - need two temp pointers, for middle or last element deletion.
+
+Circular Linked List
+
+Focus on operations at beginning and end for insertion, deletion. Because rest casea are
+similar to SLL.
+
+
+Deletion
+- At end requires 2 pointers
