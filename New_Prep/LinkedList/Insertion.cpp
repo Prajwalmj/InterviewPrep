@@ -47,6 +47,8 @@ int main()
     Node* node1 = new Node();
     node1->data = 1;
 
+    //Not good, don't mix stack and heap allocation for node creations
+    //Will create issues when deleting/freeing memory
     Node node2;
     node2.data = 6;
     Node node3;
