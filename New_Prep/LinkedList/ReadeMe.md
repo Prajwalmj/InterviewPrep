@@ -34,3 +34,11 @@ similar to SLL.
 
 Deletion
 - At end requires 2 pointers
+
+StackUsingLL
+- PUSH => Insertion at beginning of list
+- POP => Deletion from beginning of list
+
+For queue, similary
+Enqueue => Insertion at end of list
+Dequeue => Deletion from beginning of list
