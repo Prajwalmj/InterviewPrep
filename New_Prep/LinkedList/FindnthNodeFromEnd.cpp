@@ -3,41 +3,41 @@
 
 
 //Naive/Brute Force approach - Solution 1
-// struct Node* FindNthNodeFromEnd(struct Node* head, int n)
-// {
-//     struct Node* temp = head;
-//     int length = 0;
-//     while(temp != NULL)
-//     {
-//         length++;
-//         temp = temp->next;
-//     }
+struct Node* FindNthNodeFromEnd(struct Node* head, int n)
+{
+    struct Node* temp = head;
+    int length = 0;
+    while(temp != NULL)
+    {
+        length++;
+        temp = temp->next;
+    }
 
-//     struct Node* nthNode = nullptr;
-//     if(n > length)
-//     {
-//         std::cout << "N is greater than length of the list" << std::endl;
-//     }
-//     else
-//     {
-//         int nodePosition = length - n + 1;
-//         int count = 0;
-//         while(count < nodePosition)
-//         {
-//             if(nthNode == NULL)
-//             {
-//                 nthNode = head;
-//             }
-//             else
-//             {
-//                 nthNode = nthNode->next;
-//             }
-//             count++;
-//         }
+    struct Node* nthNode = nullptr;
+    if(n > length)
+    {
+        std::cout << "N is greater than length of the list" << std::endl;
+    }
+    else
+    {
+        int nodePosition = length - n + 1;
+        int count = 0;
+        while(count < nodePosition)
+        {
+            if(nthNode == NULL)
+            {
+                nthNode = head;
+            }
+            else
+            {
+                nthNode = nthNode->next;
+            }
+            count++;
+        }
 
-//     }
-//     return nthNode;
-// }
+    }
+    return nthNode;
+}
 
 //Better/efficient solution - Solution 2
 struct Node* FindNthNodeFromEnd(struct Node* head, int n)
