@@ -3,7 +3,7 @@
 // Output: {1, 2, 3, 4, 5, 0, 0, 0}
 
 //No need for generic output, just give correct output for this input/requirement
-
+-
 #include <iostream>
 #include <array>
 #include <algorithm>
