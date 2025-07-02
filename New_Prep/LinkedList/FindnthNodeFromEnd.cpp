@@ -44,6 +44,7 @@ struct Node* FindNthNodeFromEnd(struct Node* head, int n)
 {
     Node* firstPtr = head, *secondPtr = nullptr;
 
+    //Move firstPtr by n => distance between first and second ptrs will be "n" after
     for(int i = 1; i < n; i++)
     {
         if(firstPtr==nullptr)
