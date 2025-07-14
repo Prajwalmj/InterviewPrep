@@ -54,3 +54,7 @@ Dequeue => Deletion from beginning of list
 
 ## SplitCircularLLIntoTwo
 - Given a circular LL, split it into two equal pars. If no of nodes in list are odd, make first list one node extra than second list.
+
+## MergeTwoSortedLists
+- Given two sorted lists, merge them into the third list in sorted order.
+- 2 ways, iterative or recursive
