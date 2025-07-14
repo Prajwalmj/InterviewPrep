@@ -51,3 +51,6 @@ Dequeue => Deletion from beginning of list
 ## EvenOrOddLength
 - Check whether given singly LL length is even or odd
 - Use fastptr(2x) slowptr logic, similar to finding middle of LL
+
+## SplitCircularLLIntoTwo
+- Given a circular LL, split it into two equal pars. If no of nodes in list are odd, make first list one node extra than second list.

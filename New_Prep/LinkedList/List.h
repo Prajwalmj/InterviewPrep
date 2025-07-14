@@ -16,3 +16,14 @@ void PrintSinglyLinkedList(struct Node* headNode)
         temp = temp->next;
     }
 }
+
+void PrintCircularSinglyLinkedList(struct Node* headNode)
+{   
+    std::cout << "Printing list elements: " << std::endl;
+    struct Node* temp = headNode;
+    do
+    {
+        std::cout << temp->data << std::endl;
+        temp = temp->next;
+    }while(temp != headNode);
+}
