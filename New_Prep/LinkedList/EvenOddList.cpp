@@ -3,58 +3,62 @@
 
 Node* RearrangeIntoEvenOdd(Node* head)
 {
-    Node* temp = new Node();
-    temp->next = nullptr;
-    Node* head2 = temp;
-    Node *p, *q = nullptr;
-    p = head;
-
-    while(p != nullptr)
+    if(!head)
     {
-        std::cout << "#######################" << std::endl;
-        std::cout << p->data << std::endl;
-        std::cout << "#######################" << std::endl;
-        if(p->data % 2 == 0)
+        std::cout << "LL is empty" << std::endl;
+        return nullptr;
+    }
+
+    Node* evenHead = nullptr;
+    Node* evenTail = nullptr;    
+    Node* oddHead = nullptr;
+    Node* oddTail = nullptr;
+    
+    Node* current = head;
+
+    while(current)
+    {
+        //Detach node early like this, so easier to link it to even or odd list
+        Node* nxt = current->next;
+        current->next = nullptr;
+
+        if(current->data %2 == 0)
         {
-            std::cout << "Even case: " << p->data << std::endl;
-            q = p;
-            p = p->next;
-            PrintSinglyLinkedList(head);
-        }
-        else
-        {
-            std::cout << "odd case: " << p->data << std::endl;
-            if(q)
+            if(!evenHead)
             {
-                q->next = p->next;
+                evenHead = evenTail = current;
             }
             else
             {
-                q = p;
-            }
-            head2->next = p;
-            head2 = head2->next;
-            p = q->next;
-            if(p)
-            {
-                PrintSinglyLinkedList(head);
+                evenTail->next = current;
+                evenTail = evenTail->next;
             }
         }
+        else
+        {
+            if(!oddHead)
+            {
+                oddHead = oddTail = current;
+            }
+            else
+            {
+                oddTail->next = current;
+                oddTail = oddTail->next;
+            }
+        }
+
+        current = nxt;
     }
 
-    std::cout << "Printing inside function" << std::endl;
-    PrintSinglyLinkedList(head);
-    std::cout << "Printing inside function" << std::endl;
-
-    head2 = temp;
-    head2 = head2->next;
-    delete temp;
-    q->next = head2;
-
-    std::cout << "Printing second head inside function" << std::endl;
-    PrintSinglyLinkedList(head2);
-    std::cout << "Printing second head inside function" << std::endl;
-    return head;
+    if(evenHead)
+    {
+        evenTail->next = oddHead;
+        return evenHead;
+    }
+    else
+    {
+        return oddHead;
+    }
 }
 
 int main()
