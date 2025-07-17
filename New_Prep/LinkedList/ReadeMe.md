@@ -58,3 +58,6 @@ Dequeue => Deletion from beginning of list
 ## MergeTwoSortedLists
 - Given two sorted lists, merge them into the third list in sorted order.
 - 2 ways, iterative or recursive
+
+## EvenOdd
+- Given a LL with even and odd numbers, create an algo for making changes to list in such a way that all even numbers appear at the beginning
