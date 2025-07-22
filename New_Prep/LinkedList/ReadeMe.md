@@ -61,3 +61,9 @@ Dequeue => Deletion from beginning of list
 
 ## EvenOdd
 - Given a LL with even and odd numbers, create an algo for making changes to list in such a way that all even numbers appear at the beginning
+
+## ReverseListInPair
+- Reverse the linked list in pairs
+
+## ReverseListInBlocksOfk
+- Extension of previous problem, to k blocks
