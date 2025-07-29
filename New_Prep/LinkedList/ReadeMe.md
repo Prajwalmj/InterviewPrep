@@ -67,3 +67,9 @@ Dequeue => Deletion from beginning of list
 
 ## ReverseListInBlocksOfk
 - Extension of previous problem, to k blocks
+
+## ReOrder
+ - Given list {A_1, A_2, ..., A_n-1, An}, reorder it to {A_1, A_n, A_2, A_n-1,  ...., }
+
+ ## ReOrderInPlace
+ - Given list {A_1, A_2, ..., A_n-1, An}, reorder it to {A_1, A_n, A_2, A_n-1,  ...., } **without using extra space**
