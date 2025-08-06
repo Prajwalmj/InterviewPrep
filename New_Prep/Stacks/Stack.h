@@ -9,5 +9,5 @@ struct Stack
 
 namespace StackConstants
 {
-    int MAX_SIZE = 10;
+    constexpr int MAX_SIZE = 10;
 }

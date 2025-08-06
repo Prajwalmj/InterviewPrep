@@ -28,12 +28,12 @@ void DeleteStack(Stack* tempStack)
 
 bool IsStackFull(Stack* tempStack)
 {
-    return (tempStack->topIndex == StackConstants::MAX_SIZE);
+    return (tempStack->topIndex == StackConstants::MAX_SIZE) - 1;
 }
 
 bool IsStackEmpty(Stack* tempStack)
 {
-    return (tempStack->topIndex == 0);
+    return (tempStack->topIndex == -1);
 }
 
 void Push(Stack* tempStack, int pushElement)
@@ -60,6 +60,9 @@ int Pop(Stack* tempStack)
         return std::numeric_limits<int>::min();
     }
 }
+
+//Add peek function to get top element
+//
 
 int main()
 {
